@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import logo from './assets/picture/logo1.png'
 import { GrFormNextLink } from 'react-icons/gr'
-import { MdOutlinePlayCircle } from 'react-icons/md'
+import { MdEmail, MdOutlinePlayCircle } from 'react-icons/md'
 import pic5 from './assets/picture/pic5.png'
 import pic1 from './assets/picture/pic1.png'
 import pic2 from './assets/picture/pic2.png'
 import pic3 from './assets/picture/pic3.png'
 import pic4 from './assets/picture/pic4.png'
 import pic6 from './assets/picture/pic6.png'
+import pic7 from './assets/picture/pic7.png'
 import primam1 from './assets/picture/primam1.png'
 import primam2 from './assets/picture/primam2.png'
 import primam3 from './assets/picture/primam3.png'
@@ -25,6 +26,8 @@ import userpic1 from './assets/picture/userpic1.png'
 import userpic2 from './assets/picture/userpic2.png'
 import userpic3 from './assets/picture/userpic3.png'
 import ready2 from './assets/picture/ready2.png'
+import ready1 from './assets/picture/ready1.png'
+import { FiPhone } from 'react-icons/fi'
 
 
 
@@ -76,12 +79,13 @@ function App() {
                 <img src={pic5} alt="" />
               </div>
             </div>
-            <div className='w-[200px] h-[230px] md:h-full md:w-[50%] '>
-              <div className='flex relative'>
+            <div className='w-[200px] h-[230px] md:h-full md:w-[50%] ' >
+              <div className='flex relative' >
                 <img className='absolute z-30 md:h-[500px]' src={pic1} alt="" />
                 <img className='absolute z-20 md:ml-28 ml-5 md:mt-20 md:h-[500px] mt-5' src={pic2} alt="" />
                 <img className='absolute z-10 md:ml-52 ml-9 md:mt-28 md:h-[500px] mt-9 ' src={pic3} alt="" />
                 <img className='absolute md:ml-28 md:mt-0 ml-9  md:h-[500px] mt-9 ' src={pic4} alt="" />
+                <img className='bg-no-repeat bg-left-bottom md:mt-28 mt-16 ' src={pic7} alt="" />
               </div>
             </div>
 
@@ -243,11 +247,78 @@ function App() {
         {/* ready to gate start section */}
         <section>
           <div>
-            <div >
-              <img className='md:mt-24' src={ready2} alt="" />
+            <div  >
+              <img className='bg-no-repeat bg-left-top md:-ml-48 md:-mt-9 -mt-12 ' src={ready1} alt="" />
+
+              <div >
+                <img className='md:-mt-64  -mt-40 ' src={ready2} alt="" />
+              </div>
             </div>
           </div>
         </section>
+
+        {/* footer section */}
+        <footer>
+          <div className='mt-7 md:mt-24'>
+            <div className='flex flex-col md:flex-row gap-5 '>
+              <div className='space-y-2 md:w-[20%] flex flex-col  items-center md:items-start'>
+                <div >
+                  <img src={logo} alt="" />
+                </div>
+                <div className='text-[#FF5555] flex items-center gap-1'>
+                  <MdEmail />
+                  <p className='text-black'>help@frybix.com</p>
+                </div>
+                <div className='text-[#FF5555] flex items-center gap-1'>
+                  <FiPhone />
+                  <p className='text-black'><div className='text-[#FF5555] flex items-center gap-1'>
+                    <p className='text-black'>+1 234 456 678 89</p>
+                  </div></p>
+                </div>
+              </div>
+              <div className='flex gap-5 md:w-[50%]'>
+                <div className='md:w-full'>
+                  <h1 className='text-2xl font-semibold'>Links</h1>
+                  <p>Home</p>
+                  <p>About us</p>
+                  <p>Bookings</p>
+                  <p>Blog</p>
+                </div>
+                <div className='md:w-full'>
+                  <h1 className='text-2xl font-semibold'>Legal</h1>
+                  <p>Terms of use</p>
+                  <p>Privacy policy</p>
+                  <p>Cookie policy</p>
+
+                </div>
+                <div className='md:w-full' >
+                  <h1 className='text-2xl font-semibold'>Product</h1>
+                  <p>Take tour</p>
+                  <p>Live chat</p>
+                  <p>Reveiws</p>
+
+                </div>
+              </div>
+              <div>
+                <div className='flex flex-col  items-center md:items-start' >
+                  <h1 className='text-2xl font-semibold'>Newsletter</h1>
+                  <p>Stay up to date</p>
+                  <div className='mt-2'>
+                    <button className='py-2 px-4 text-gray-400 bg-gray-50'>Your email </button>
+                    <button className='bg-black text-gray-200 py-2 px-4'>Subscribe</button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <hr className='text-gray-400 font-semibold my-5 ' />
+            <div className='my-5 md:mb-12'>
+              <h1 className='text-center'>Copyright 2024 uifry.com all rights reserved</h1>
+            </div>
+
+          </div>
+        </footer>
       </div>
 
     </>
