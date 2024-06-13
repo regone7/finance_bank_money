@@ -24,6 +24,8 @@ import whyprim6 from './assets/picture/whyprim6.png'
 import userpic1 from './assets/picture/userpic1.png'
 import userpic2 from './assets/picture/userpic2.png'
 import userpic3 from './assets/picture/userpic3.png'
+import ready2 from './assets/picture/ready2.png'
+
 
 
 
@@ -35,7 +37,7 @@ function App() {
   return (
     <>
 
-      <div className='container mx-auto'>
+      <div className='container mx-auto font-serif'>
         {/* navbar */}
         <nav className='w-[350px] md:w-full h-[150px] md:h-full p-5'>
           <div className='flex flex-col md:flex-row justify-between items-center h-16 gap-3'>
@@ -61,7 +63,7 @@ function App() {
         {/*make the best financial decisions section  */}
         <section>
           <div className='flex flex-col md:flex-row '>
-            <div className='p-5 md:mt-16 md:w-[45%] bg-no-repeat bg-top'  style={{ backgroundImage: `url(${pic6})` }} >
+            <div className='p-5 md:mt-16 md:w-[45%] bg-no-repeat bg-top' style={{ backgroundImage: `url(${pic6})` }} >
               <h1 className=' md:text-[40px] text-[30px] font-bold '> Make the best Financial Decisions</h1>
               <p className='md:mt-3 md:mb-1'>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
               <div>
@@ -141,7 +143,7 @@ function App() {
           <div className='flex flex-col md:flex-row'>
             <div className='p-5 md:w-[50%] md:h-[500px] flex flex-col  justify-center  '>
               <p className='text-[#FF5555]'>Advatnages</p>
-              <h1 className='text-[32px] font-semibold'>why choose Uifry?</h1>
+              <h1 className='text-[32px] font-semibold'>Why Choose Uifry?</h1>
               <div className='my-3'>
                 <div className='flex items-center gap-2'>
                   <div className='w-[24px] h[24px]'>
@@ -177,8 +179,8 @@ function App() {
         <section>
           <div className='text-center '>
             <p >Testimonial</p>
-            <h1 className='md:text-[42px] font-semibold text-2xl'>what our users say </h1>
-            <h1 className='md:text-[42px] font-semibold text-2xl' >about us? </h1>
+            <h1 className='md:text-[42px] font-semibold text-2xl'>What Our Users Say </h1>
+            <h1 className='md:text-[42px] font-semibold text-2xl md:mt-2' >About us? </h1>
           </div>
           <div className='flex flex-col md:flex-row md:-mt-7 p-5'>
             <div>
@@ -190,9 +192,59 @@ function App() {
               <h1 className='text-2xl'>The best financial accounting app ever!</h1>
               <p className='my-3 text-gray-500'>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.”</p>
               <div >
-                <img  src={userpic2} alt="" />
+                <img src={userpic2} alt="" />
               </div>
               <p className='my-3 text-gray-500'>nick jonas</p>
+            </div>
+          </div>
+        </section>
+        {/* faq section */}
+        <section>
+          <div>
+            <p className='text-[#FF5555]'>Faq</p>
+            <h1 className='md:text-[42px] text-2xl'>Frequently Asked Questions</h1>
+            <div className='mt-5 flex flex-col md:flex-row gap-4'>
+              <div className='flex flex-col '>
+                <div className='bg-[#FF5555] p-3 rounded-md text-gray-200' >
+                  <h1 className='text-xl' >The best financial accounting app ever!</h1>
+                  <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                </div>
+                <div className=' p-3 rounded-md'>
+                  <h1 className='text-xl' >The best financial accounting app ever!</h1>
+                  <p className='text-gray-600'>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                </div>
+                <div className='bg-[#FF5555] p-3 rounded-md text-gray-200'>
+                  <h1 className='text-xl' >The best financial accounting app ever!</h1>
+                  <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                </div>
+              </div>
+              <div>
+                <div className='flex flex-col '>
+                  <div className=' p-3 rounded-md' >
+                    <h1 className='text-xl' >The best financial accounting app ever!</h1>
+                    <p className='text-gray-600'>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                  </div>
+                  <div className=' bg-[#FF5555] p-3 rounded-md text-gray-200'>
+                    <h1 className='text-xl' >The best financial accounting app ever!</h1>
+                    <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                  </div>
+                  <div className=' p-3 rounded-md'>
+                    <h1 className='text-xl ' >The best financial accounting app ever!</h1>
+                    <p className='text-gray-600'> “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+
+            </div>
+          </div>
+        </section>
+        {/* ready to gate start section */}
+        <section>
+          <div>
+            <div >
+              <img className='md:mt-24' src={ready2} alt="" />
             </div>
           </div>
         </section>
